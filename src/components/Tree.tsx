@@ -1,14 +1,16 @@
 import React from "react";
 type Props = {
-  name: string;
+  commonName: string;
   scientificName: string;
+  numLikes: number;
 };
 class Tree extends React.Component<Props> {
   render() {
     return (
       <div>
-        <p>Name: {this.props.name}</p>
+        <p>commonName: {this.props.commonName}</p>
         <p>scientificName: {this.props.scientificName}</p>
+        <p>numLikes: {this.props.numLikes}</p>
       </div>
     );
   }
